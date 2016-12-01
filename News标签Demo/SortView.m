@@ -1,31 +1,27 @@
 //
-//  FXJSortView.m
-//  标签排序Demo
+//  SortView.m
+//  News标签Demo
 //
-//  Created by 冯学杰 on 16/4/5.
-//  Copyright © 2016年 冯学杰. All rights reserved.
+//  Created by tianXin on 16/12/1.
 //
-//  如果arr的数量超过100,需要手动修改代码
-//  水平太低 代码太乱，请见谅- -
+//
 
-#import "FXJSortView.h"
-
+#import "SortView.h"
 #define distance 20 //标签间的距离
 #define numOfRow 4 //每行的按钮数量
 #define buttonWidth (SCREEN_WIDTH - distance * (numOfRow+1)) / numOfRow
 #define buttonHeight 20
 #define sectionHeight 20
 
-@implementation FXJSortView{
+@implementation SortView  {
     CGPoint recognizerPoint;
     NSMutableArray *secondSectionArr;//存放未选中的
     NSMutableArray *btnArr;//存放所有Btn 避免后面拖动判断时判断到其他控件
 }
 
-
 //创建titleList
 -(void)firstTitleBtns:(NSArray *)arr{
-
+    
     self.backgroundColor = [UIColor whiteColor];
     
     self.lineImageView = [[UIImageView alloc]init];
@@ -42,7 +38,7 @@
     for (int i = 0; i < arr.count; i++) {
         
         
-       
+        
         
         CGFloat btnX = distance + (buttonWidth + distance) * (i % numOfRow);
         CGFloat btnY = (buttonHeight + distance) * (i / numOfRow);
@@ -67,9 +63,9 @@
         [btn addGestureRecognizer:longPress];
         [btnArr addObject:btn];
         [self addSubview:btn];
-       
+        
     }
-
+    
 }
 
 -(void)secondTitleBtns:(NSArray *)arr{
@@ -79,7 +75,7 @@
     }
     for (int i = 0; i < arr.count; i++) {
         
-
+        
         MyButton *btn = [MyButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor whiteColor];
         [btn.layer setBorderWidth:0.3]; //边框宽度
@@ -121,15 +117,15 @@
     self.lineImageView.frame = CGRectMake(10, firstSectionHeght, SCREEN_WIDTH-20, 0.5);
     
     for (int i = 0; i< secondSectionArr.count; i++) {
-            MyButton *button = [self viewWithTag:i+100];
-            //button现在的位置
-            NSInteger nowWeiZhi=secondSectionArr.count-i;
-            CGFloat btnX = distance + (buttonWidth + distance) * ((nowWeiZhi-1) % numOfRow);
-            CGFloat btnY = (buttonHeight + distance) * ((nowWeiZhi-1) / numOfRow);
-
-            [UIView animateWithDuration:0.3 animations:^{
-                button.frame = CGRectMake(btnX, firstSectionHeght+sectionHeight+btnY, buttonWidth, buttonHeight);
-            }];
+        MyButton *button = [self viewWithTag:i+100];
+        //button现在的位置
+        NSInteger nowWeiZhi=secondSectionArr.count-i;
+        CGFloat btnX = distance + (buttonWidth + distance) * ((nowWeiZhi-1) % numOfRow);
+        CGFloat btnY = (buttonHeight + distance) * ((nowWeiZhi-1) / numOfRow);
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            button.frame = CGRectMake(btnX, firstSectionHeght+sectionHeight+btnY, buttonWidth, buttonHeight);
+        }];
     }
 }
 //改变后第一个secontion按钮的Btn变化
@@ -167,7 +163,7 @@
 }
 
 
-#pragma mark - 按钮事件 
+#pragma mark - 按钮事件
 //按钮改变
 -(void)touchBtn:(MyButton *)sender{
     if (sender.isDown == NO) {
@@ -185,7 +181,7 @@
         NSString *str = [secondSectionArr objectAtIndex:weiZhi];
         [secondSectionArr removeObjectAtIndex:weiZhi];
         [self.newtitleArr addObject:str];
-
+        
         [self btnUp:sender];
     }
 }
@@ -286,3 +282,4 @@
 @implementation MyButton
 
 @end
+

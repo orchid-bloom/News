@@ -1,19 +1,16 @@
 //
-//  FXJSortView.h
-//  标签排序Demo
+//  SortView.h
+//  News标签Demo
 //
-//  Created by 冯学杰 on 16/4/5.
-//  Copyright © 2016年 冯学杰. All rights reserved.
+//  Created by tianXin on 16/12/1.
+//
 //
 
 #import <UIKit/UIKit.h>
-
 //屏幕相关
 #define  SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define  SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-
-
-@interface FXJSortView : UIView
+@interface SortView : UIView
 
 -(void)firstTitleBtns:(NSArray *)arr;//创建已选Buttons
 

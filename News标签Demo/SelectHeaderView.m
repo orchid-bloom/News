@@ -39,7 +39,7 @@ static CGFloat Scale  = 1.2f;
     self.contentViewScrollView = [[UIScrollView alloc] initWithFrame:frame];
     [superVC.view addSubview:self.contentViewScrollView];
     
-    CGFloat W = 60;
+    CGFloat W = 70;
     CGFloat H = Height;
     CGFloat x = 0;
     self.backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, W - 10, H - 10)];
