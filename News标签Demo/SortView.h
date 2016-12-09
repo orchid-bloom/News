@@ -7,19 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Constant.h"
 
 @interface SortView : UIView
 
-@property(nonatomic,strong)NSMutableArray *selectedArray;  //选中
-@property(nonatomic,strong)UIImageView *lineImageView;
-
-- (void)selectedTitleButton:(NSArray *)selectedTitleArray;
-- (void)unselectedTitleButton:(NSArray *)unselectedTitleArray;
+@property(nonatomic,strong,nullable)NSArray *selectedTitleArray;
+@property(nonatomic,strong,nullable)NSArray *unselectedTitleArray;
 
 @end
 
 @interface SortButton : UIButton
+
 @property (nonatomic ,assign) BOOL isDown;
 
 @end
