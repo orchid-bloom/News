@@ -7,6 +7,7 @@
 //
 
 #import "SortViewController.h"
+#import "FXJSortView.h"
 #import "Constant.h"
 #import "SortView.h"
 
@@ -18,11 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    SortView *sortView = [[SortView alloc]initWithFrame:CGRectMake(0, 64 + 20, ScreenWidth, ScreenHeight)];
-    NSArray *arr = @[@"对三",@"呵呵",@"要不起"];
-    
-    [sortView firstTitleBtns:self.titleArray];
-    [sortView secondTitleBtns:arr];
+//    FXJSortView *sortView = [[FXJSortView alloc]initWithFrame:CGRectMake(0, 74, ScreenWidth, ScreenHeight)];
+//    NSArray *weixuanzhongArr = @[@"对三",@"呵呵",@"要不起"];
+//    
+//    [sortView firstTitleBtns:self.titleArray];
+//    [sortView secondTitleBtns:weixuanzhongArr];
+//    [self.view addSubview:sortView];
+    SortView *sortView = [[SortView alloc] initWithFrame:CGRectMake(0, 74, ScreenWidth, ScreenHeight)];
+    NSArray *unselectedArray = @[@"政治",@"国外",@"军事"];
+    [sortView selectedTitleButton:self.titleArray];
+    [sortView unselectedTitleButton:unselectedArray];
     [self.view addSubview:sortView];
 }
 

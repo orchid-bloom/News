@@ -19,7 +19,8 @@
 		B631BDA61DEFCE4100AA6D59 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDA51DEFCE4100AA6D59 /* ChildViewController.m */; };
 		B631BDAC1DEFD23A00AA6D59 /* SelectHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDAB1DEFD23A00AA6D59 /* SelectHeaderView.m */; };
 		B631BDB21DF008A900AA6D59 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDB11DF008A900AA6D59 /* SortViewController.m */; };
-		B643C14C1DF00EAC00170DC1 /* SortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B643C14B1DF00EAC00170DC1 /* SortView.m */; };
+		B631BDB51DF0099900AA6D59 /* FXJSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDB41DF0099900AA6D59 /* FXJSortView.m */; };
+		B63A77501DF7E65B00142C66 /* SortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A774F1DF7E65B00142C66 /* SortView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +66,10 @@
 		B631BDAF1DEFD58900AA6D59 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		B631BDB01DF008A900AA6D59 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
 		B631BDB11DF008A900AA6D59 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
-		B643C14A1DF00EAC00170DC1 /* SortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortView.h; sourceTree = "<group>"; };
-		B643C14B1DF00EAC00170DC1 /* SortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortView.m; sourceTree = "<group>"; };
+		B631BDB31DF0099900AA6D59 /* FXJSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXJSortView.h; sourceTree = "<group>"; };
+		B631BDB41DF0099900AA6D59 /* FXJSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXJSortView.m; sourceTree = "<group>"; };
+		B63A774E1DF7E65B00142C66 /* SortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortView.h; sourceTree = "<group>"; };
+		B63A774F1DF7E65B00142C66 /* SortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +175,10 @@
 				B631BDAF1DEFD58900AA6D59 /* Constant.h */,
 				B631BDAA1DEFD23A00AA6D59 /* SelectHeaderView.h */,
 				B631BDAB1DEFD23A00AA6D59 /* SelectHeaderView.m */,
-				B643C14A1DF00EAC00170DC1 /* SortView.h */,
-				B643C14B1DF00EAC00170DC1 /* SortView.m */,
+				B63A774E1DF7E65B00142C66 /* SortView.h */,
+				B63A774F1DF7E65B00142C66 /* SortView.m */,
+				B631BDB31DF0099900AA6D59 /* FXJSortView.h */,
+				B631BDB41DF0099900AA6D59 /* FXJSortView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -329,10 +334,11 @@
 				B631BD761DEFCDCB00AA6D59 /* ViewController.m in Sources */,
 				B631BDAC1DEFD23A00AA6D59 /* SelectHeaderView.m in Sources */,
 				B631BD731DEFCDCB00AA6D59 /* AppDelegate.m in Sources */,
+				B631BDB51DF0099900AA6D59 /* FXJSortView.m in Sources */,
 				B631BDA61DEFCE4100AA6D59 /* ChildViewController.m in Sources */,
 				B631BDB21DF008A900AA6D59 /* SortViewController.m in Sources */,
 				B631BD701DEFCDCA00AA6D59 /* main.m in Sources */,
-				B643C14C1DF00EAC00170DC1 /* SortView.m in Sources */,
+				B63A77501DF7E65B00142C66 /* SortView.m in Sources */,
 				B631BDA31DEFCE0200AA6D59 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
