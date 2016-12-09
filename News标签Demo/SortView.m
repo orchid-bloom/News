@@ -22,7 +22,7 @@
 @property(nonatomic,strong)NSMutableArray *buttonArray;//存放所有Btn 避免后面拖动判断时判断到其他控件
 @property(nonatomic,strong)UIImageView    *lineImageView;
 @property(nonatomic,assign)CGPoint         recognizerPoint;
-;
+
 @end
 
 @implementation SortView
@@ -48,7 +48,7 @@
     [self addSubview:self.lineImageView];
     for (int i = 0; i < selectedTitleArray.count; i++) {
         CGFloat btnX = distance + (buttonWidth + distance) * (i % numOfRow);
-        CGFloat btnY = (buttonHeight + distance) * (i / numOfRow);
+        CGFloat btnY = (buttonHeight + distance) * (i / numOfRow) + distance/3;
         SortButton *btn = [SortButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
         btn.backgroundColor = [UIColor whiteColor];
@@ -57,7 +57,7 @@
         CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 0, 0, 0.5 });
         [btn.layer setBorderColor:colorref];//边框颜色
         [btn.layer setMasksToBounds:YES];
-        [btn.layer setCornerRadius:10.0]; //设置矩形四个圆角半径
+        [btn.layer setCornerRadius:5]; //设置矩形四个圆角半径
         btn.tag = i+1;
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
@@ -84,7 +84,7 @@
         CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 0, 0, 0.5 });
         [btn.layer setBorderColor:colorref];//边框颜色
         [btn.layer setMasksToBounds:YES];
-        [btn.layer setCornerRadius:10.0]; //设置矩形四个圆角半径
+        [btn.layer setCornerRadius:5]; //设置矩形四个圆角半径
         btn.tag = i+100;
         btn.isDown = YES;
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
