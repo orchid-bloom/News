@@ -1,29 +1,22 @@
 //
-//  SortViewController.m
+//  ChildViewController.m
 //  News标签Demo
 //
 //  Created by tianXin on 16/12/1.
 //
 //
 
-#import "SortViewController.h"
+#import "DTChildViewController.h"
 #import "Constant.h"
-#import "SortView.h"
-
-@interface SortViewController ()
+@interface DTChildViewController ()
 
 @end
 
-@implementation SortViewController
+@implementation DTChildViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    SortView *sortView = [[SortView alloc] initWithFrame:CGRectMake(0, 74, ScreenWidth, ScreenHeight)];
-    NSArray *unselectedArray = @[@"政治",@"国外",@"军事"];
-    sortView.selectedTitleArray = self.titleArray;
-    sortView.unselectedTitleArray = unselectedArray;
-    [self.view addSubview:sortView];
+    self.view.backgroundColor = RandomColor;
 }
 
 - (void)didReceiveMemoryWarning {

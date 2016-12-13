@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "DTHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    HomeViewController *VC = [[HomeViewController alloc] init];
+    DTHomeViewController *VC = [[DTHomeViewController alloc] init];
     VC.title = @"News";
     UINavigationController *uNC = [[UINavigationController alloc] initWithRootViewController:VC];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

@@ -6,7 +6,7 @@
 //
 //
 
-#import "SortView.h"
+#import "DTSortView.h"
 #import "Constant.h"
 
 #define distance 20 //标签间的距离
@@ -15,7 +15,7 @@
 #define buttonHeight 20
 #define sectionHeight 20
 
-@interface  SortView ()
+@interface  DTSortView ()
 
 @property(nonatomic,strong)NSMutableArray *selectedArray;  //选中
 @property(nonatomic,strong)NSMutableArray *secondSectionArray;//存放未选中的
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation SortView
+@implementation DTSortView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -49,7 +49,7 @@
     for (int i = 0; i < selectedTitleArray.count; i++) {
         CGFloat btnX = distance + (buttonWidth + distance) * (i % numOfRow);
         CGFloat btnY = (buttonHeight + distance) * (i / numOfRow) + distance/3;
-        SortButton *btn = [SortButton buttonWithType:UIButtonTypeCustom];
+        DTSortButton *btn = [DTSortButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
         btn.backgroundColor = [UIColor whiteColor];
         [btn.layer setBorderWidth:0.3]; //边框宽度
@@ -77,7 +77,7 @@
         [_secondSectionArray addObject: obj];
     }
     for (int i = 0; i < unselectedTitleArray.count; i++) {
-        SortButton *btn = [SortButton buttonWithType:UIButtonTypeCustom];
+        DTSortButton *btn = [DTSortButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor whiteColor];
         [btn.layer setBorderWidth:0.3]; //边框宽度
         CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -110,7 +110,7 @@
     CGFloat sectionLineHeight = row * (buttonHeight + distance);
     self.lineImageView.frame = CGRectMake(0, sectionLineHeight, ScreenWidth, 0.5);
     for (int i = 0; i< _secondSectionArray.count; i++) {
-        SortButton *button = [self viewWithTag:i+100];
+        DTSortButton *button = [self viewWithTag:i+100];
         //button现在的位置
         NSInteger nowWeiZhi=_secondSectionArray.count-i;
         CGFloat btnX = distance + (buttonWidth + distance) * ((nowWeiZhi-1) % numOfRow);
@@ -121,7 +121,7 @@
         }];
     }
 }
-- (void)touchButtonn:(SortButton *)sender {
+- (void)touchButtonn:(DTSortButton *)sender {
     if (!sender.isDown) {
         [self.selectedArray removeObjectAtIndex:sender.tag-1];
         [self changeSelectedSection:sender.tag];
@@ -140,7 +140,7 @@
 }
 - (void)changeSelectedSection:(NSInteger)changeTag {
     for (NSInteger i = changeTag; i<=self.selectedArray.count; i++) {
-        SortButton *button = [self viewWithTag:i+1];
+        DTSortButton *button = [self viewWithTag:i+1];
         button.tag = i;
         CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
         CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
@@ -149,9 +149,9 @@
         }];
     }
 }
-- (void)changeUnselectedSection:(SortButton *)sender {
+- (void)changeUnselectedSection:(DTSortButton *)sender {
     for (NSInteger i = sender.tag; i<_secondSectionArray.count+100; i++) {
-        SortButton *button = [self viewWithTag:i+1];
+        DTSortButton *button = [self viewWithTag:i+1];
         button.tag = i;
     }
     //修改上移按钮的位置
@@ -166,7 +166,7 @@
     [self layoutSecondSection];
 }
 - (void)longPress:(UILongPressGestureRecognizer *)recognizer {
-    SortButton *recognizerView = (SortButton *)recognizer.view;
+    DTSortButton *recognizerView = (DTSortButton *)recognizer.view;
     if (recognizerView.isDown == NO) {
         // 触碰点
         _recognizerPoint = [recognizer locationInView:self];
@@ -182,7 +182,7 @@
         else if (recognizer.state == UIGestureRecognizerStateChanged){
             
             recognizerView.center = _recognizerPoint;
-            for (SortButton *btn in _buttonArray) {
+            for (DTSortButton *btn in _buttonArray) {
                 if (CGRectContainsPoint(btn.frame, recognizerView.center)&& btn!= recognizerView && btn.isDown ==NO) {
                     
                     if (btn.tag > recognizerView.tag) {
@@ -198,7 +198,7 @@
                             if (i==to) {
                                 recognizerView.tag = to;
                             }else{
-                                SortButton *onebtn = [self viewWithTag:i+1];
+                                DTSortButton *onebtn = [self viewWithTag:i+1];
                                 onebtn.tag = i;
                                 CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
                                 CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
@@ -221,7 +221,7 @@
                             if (i == twoto) {
                                 recognizerView.tag = twoto;
                             }else{
-                                SortButton *twobtn = [self viewWithTag:i-1];
+                                DTSortButton *twobtn = [self viewWithTag:i-1];
                                 twobtn.tag = i;
                                 CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
                                 CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
@@ -250,7 +250,7 @@
 }
 @end
 
-@implementation SortButton
+@implementation DTSortButton
 
 
 @end

@@ -15,11 +15,11 @@
 		B631BD7E1DEFCDCC00AA6D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B631BD7C1DEFCDCC00AA6D59 /* LaunchScreen.storyboard */; };
 		B631BD891DEFCDCE00AA6D59 /* News__DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BD881DEFCDCE00AA6D59 /* News__DemoTests.m */; };
 		B631BD941DEFCDCF00AA6D59 /* News__DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BD931DEFCDCF00AA6D59 /* News__DemoUITests.m */; };
-		B631BDA31DEFCE0200AA6D59 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDA21DEFCE0200AA6D59 /* HomeViewController.m */; };
-		B631BDA61DEFCE4100AA6D59 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDA51DEFCE4100AA6D59 /* ChildViewController.m */; };
-		B631BDAC1DEFD23A00AA6D59 /* SelectHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDAB1DEFD23A00AA6D59 /* SelectHeaderView.m */; };
-		B631BDB21DF008A900AA6D59 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDB11DF008A900AA6D59 /* SortViewController.m */; };
-		B63A77501DF7E65B00142C66 /* SortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A774F1DF7E65B00142C66 /* SortView.m */; };
+		B631BDA31DEFCE0200AA6D59 /* DTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDA21DEFCE0200AA6D59 /* DTHomeViewController.m */; };
+		B631BDA61DEFCE4100AA6D59 /* DTChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDA51DEFCE4100AA6D59 /* DTChildViewController.m */; };
+		B631BDAC1DEFD23A00AA6D59 /* DTSelectHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDAB1DEFD23A00AA6D59 /* DTSelectHeaderView.m */; };
+		B631BDB21DF008A900AA6D59 /* DTSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B631BDB11DF008A900AA6D59 /* DTSortViewController.m */; };
+		B63A77501DF7E65B00142C66 /* DTSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A774F1DF7E65B00142C66 /* DTSortView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,17 +56,17 @@
 		B631BD8F1DEFCDCE00AA6D59 /* News标签DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News标签DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B631BD931DEFCDCF00AA6D59 /* News__DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News__DemoUITests.m; sourceTree = "<group>"; };
 		B631BD951DEFCDCF00AA6D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B631BDA11DEFCE0200AA6D59 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		B631BDA21DEFCE0200AA6D59 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		B631BDA41DEFCE4100AA6D59 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
-		B631BDA51DEFCE4100AA6D59 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
-		B631BDAA1DEFD23A00AA6D59 /* SelectHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectHeaderView.h; sourceTree = "<group>"; };
-		B631BDAB1DEFD23A00AA6D59 /* SelectHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectHeaderView.m; sourceTree = "<group>"; };
+		B631BDA11DEFCE0200AA6D59 /* DTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTHomeViewController.h; sourceTree = "<group>"; };
+		B631BDA21DEFCE0200AA6D59 /* DTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHomeViewController.m; sourceTree = "<group>"; };
+		B631BDA41DEFCE4100AA6D59 /* DTChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTChildViewController.h; sourceTree = "<group>"; };
+		B631BDA51DEFCE4100AA6D59 /* DTChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTChildViewController.m; sourceTree = "<group>"; };
+		B631BDAA1DEFD23A00AA6D59 /* DTSelectHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSelectHeaderView.h; sourceTree = "<group>"; };
+		B631BDAB1DEFD23A00AA6D59 /* DTSelectHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSelectHeaderView.m; sourceTree = "<group>"; };
 		B631BDAF1DEFD58900AA6D59 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		B631BDB01DF008A900AA6D59 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
-		B631BDB11DF008A900AA6D59 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
-		B63A774E1DF7E65B00142C66 /* SortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortView.h; sourceTree = "<group>"; };
-		B63A774F1DF7E65B00142C66 /* SortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortView.m; sourceTree = "<group>"; };
+		B631BDB01DF008A900AA6D59 /* DTSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSortViewController.h; sourceTree = "<group>"; };
+		B631BDB11DF008A900AA6D59 /* DTSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSortViewController.m; sourceTree = "<group>"; };
+		B63A774E1DF7E65B00142C66 /* DTSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSortView.h; sourceTree = "<group>"; };
+		B63A774F1DF7E65B00142C66 /* DTSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSortView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,10 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				B631BDAF1DEFD58900AA6D59 /* Constant.h */,
-				B631BDAA1DEFD23A00AA6D59 /* SelectHeaderView.h */,
-				B631BDAB1DEFD23A00AA6D59 /* SelectHeaderView.m */,
-				B63A774E1DF7E65B00142C66 /* SortView.h */,
-				B63A774F1DF7E65B00142C66 /* SortView.m */,
+				B631BDAA1DEFD23A00AA6D59 /* DTSelectHeaderView.h */,
+				B631BDAB1DEFD23A00AA6D59 /* DTSelectHeaderView.m */,
+				B63A774E1DF7E65B00142C66 /* DTSortView.h */,
+				B63A774F1DF7E65B00142C66 /* DTSortView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -181,12 +181,12 @@
 		B631BDA91DEFD18400AA6D59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B631BDA11DEFCE0200AA6D59 /* HomeViewController.h */,
-				B631BDA21DEFCE0200AA6D59 /* HomeViewController.m */,
-				B631BDA41DEFCE4100AA6D59 /* ChildViewController.h */,
-				B631BDA51DEFCE4100AA6D59 /* ChildViewController.m */,
-				B631BDB01DF008A900AA6D59 /* SortViewController.h */,
-				B631BDB11DF008A900AA6D59 /* SortViewController.m */,
+				B631BDA11DEFCE0200AA6D59 /* DTHomeViewController.h */,
+				B631BDA21DEFCE0200AA6D59 /* DTHomeViewController.m */,
+				B631BDA41DEFCE4100AA6D59 /* DTChildViewController.h */,
+				B631BDA51DEFCE4100AA6D59 /* DTChildViewController.m */,
+				B631BDB01DF008A900AA6D59 /* DTSortViewController.h */,
+				B631BDB11DF008A900AA6D59 /* DTSortViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 				TargetAttributes = {
 					B631BD6A1DEFCDC900AA6D59 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = NSP28TH28W;
+						DevelopmentTeam = P9VHF7G578;
 						ProvisioningStyle = Automatic;
 					};
 					B631BD831DEFCDCC00AA6D59 = {
@@ -327,13 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B631BD761DEFCDCB00AA6D59 /* ViewController.m in Sources */,
-				B631BDAC1DEFD23A00AA6D59 /* SelectHeaderView.m in Sources */,
+				B631BDAC1DEFD23A00AA6D59 /* DTSelectHeaderView.m in Sources */,
 				B631BD731DEFCDCB00AA6D59 /* AppDelegate.m in Sources */,
-				B631BDA61DEFCE4100AA6D59 /* ChildViewController.m in Sources */,
-				B631BDB21DF008A900AA6D59 /* SortViewController.m in Sources */,
+				B631BDA61DEFCE4100AA6D59 /* DTChildViewController.m in Sources */,
+				B631BDB21DF008A900AA6D59 /* DTSortViewController.m in Sources */,
 				B631BD701DEFCDCA00AA6D59 /* main.m in Sources */,
-				B63A77501DF7E65B00142C66 /* SortView.m in Sources */,
-				B631BDA31DEFCE0200AA6D59 /* HomeViewController.m in Sources */,
+				B63A77501DF7E65B00142C66 /* DTSortView.m in Sources */,
+				B631BDA31DEFCE0200AA6D59 /* DTHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NSP28TH28W;
+				DEVELOPMENT_TEAM = P9VHF7G578;
 				INFOPLIST_FILE = "News标签Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,7 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NSP28TH28W;
+				DEVELOPMENT_TEAM = P9VHF7G578;
 				INFOPLIST_FILE = "News标签Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

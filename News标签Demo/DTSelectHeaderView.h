@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectHeaderView : UIView<UIScrollViewDelegate>
+@interface DTSelectHeaderView : UIView<UIScrollViewDelegate>
 
 @property(nonatomic,strong)UIScrollView    *titleScrollView;       //标题ScrollView
 @property(nonatomic,strong)UIScrollView    *contentViewScrollView; //控制器ScrollView

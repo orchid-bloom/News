@@ -6,13 +6,13 @@
 //
 //
 
-#import "SelectHeaderView.h"
+#import "DTSelectHeaderView.h"
 #import "Constant.h"
 
 static CGFloat Height = 44.0f;
 static CGFloat Scale  = 1.2f;
 
-@implementation SelectHeaderView
+@implementation DTSelectHeaderView
 
 - (NSMutableArray *)buttonArray {
     if (!_buttonArray) {

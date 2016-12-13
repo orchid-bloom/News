@@ -6,20 +6,20 @@
 //
 //
 
-#import "HomeViewController.h"
-#import "ChildViewController.h"
-#import "SelectHeaderView.h"
+#import "DTHomeViewController.h"
+#import "DTChildViewController.h"
+#import "DTSelectHeaderView.h"
 #import "Constant.h"
-#import "SortViewController.h"
+#import "DTSortViewController.h"
 
-@interface HomeViewController () {
+@interface DTHomeViewController () {
     NSArray *_titleArray;
 }
 @property (nonatomic , strong) UIButton *slectListButton;
 
 @end
 
-@implementation HomeViewController
+@implementation DTHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,10 +34,10 @@
     _titleArray = @[@"美食",@"旅游",@"电影",@"招聘",@"娱乐",@"肯德基",@"网吧",@"逛街",@"探险",@"流浪",@"LOL",@"图书馆"];
 }
 - (void)loadViews {
-    SelectHeaderView *headerView = [SelectHeaderView new];
+    DTSelectHeaderView *headerView = [DTSelectHeaderView new];
     [self.view addSubview:headerView];
     for (int i = 0 ; i < _titleArray.count; i ++) {
-        ChildViewController *childVC = [[ChildViewController alloc] init];
+        DTChildViewController *childVC = [[DTChildViewController alloc] init];
         [headerView addChildViewController:childVC title:[_titleArray objectAtIndex:i]];
     }
     [headerView setSelectHeaderView];
@@ -53,7 +53,7 @@
 }
 
 -(void)addBtn:(id)sender{
-    SortViewController *sortVC = [[SortViewController alloc] init];
+    DTSortViewController *sortVC = [[DTSortViewController alloc] init];
     sortVC.title = @"标签选择";
     sortVC.titleArray = _titleArray;
     [self.navigationController pushViewController:sortVC animated:YES];

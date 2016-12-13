@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SortView : UIView
+@interface DTSortView : UIView
 
 @property(nonatomic,strong,nullable)NSArray *selectedTitleArray;
 @property(nonatomic,strong,nullable)NSArray *unselectedTitleArray;
 
 @end
 
-@interface SortButton : UIButton
+@interface DTSortButton : UIButton
 
 @property (nonatomic ,assign) BOOL isDown;
 

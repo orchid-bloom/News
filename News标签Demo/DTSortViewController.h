@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SortViewController : UIViewController
+@interface DTSortViewController : UIViewController
 
 @property(nonatomic,strong)NSArray *titleArray;
 
