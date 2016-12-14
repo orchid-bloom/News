@@ -143,7 +143,7 @@
         DTSortButton *button = [self viewWithTag:i+1];
         button.tag = i;
         CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
-        CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
+        CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow) + distance/3;
         [UIView animateWithDuration:0.3 animations:^{
             button.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
         }];
@@ -201,7 +201,7 @@
                                 DTSortButton *onebtn = [self viewWithTag:i+1];
                                 onebtn.tag = i;
                                 CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
-                                CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
+                                CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow)+distance/3;
                                 [UIView animateWithDuration:0.3 animations:^{
                                     onebtn.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
                                     
@@ -224,7 +224,7 @@
                                 DTSortButton *twobtn = [self viewWithTag:i-1];
                                 twobtn.tag = i;
                                 CGFloat btnX = distance + (buttonWidth + distance) * ((i-1) % numOfRow);
-                                CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow);
+                                CGFloat btnY = (buttonHeight + distance) * ((i-1) / numOfRow)+distance/3;
                                 [UIView animateWithDuration:0.3 animations:^{
                                     twobtn.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
                                 }];
@@ -240,7 +240,7 @@
                 recognizerView.transform = CGAffineTransformMakeScale(1.0, 1.0);
                 recognizerView.alpha = 1;
                 CGFloat btnX = distance + (buttonWidth + distance) * ((recognizerView.tag - 1) % numOfRow);
-                CGFloat btnY = (buttonHeight + distance) * ((recognizerView.tag -1) / numOfRow);
+                CGFloat btnY = (buttonHeight + distance) * ((recognizerView.tag -1) / numOfRow)+distance/3;
                 [UIView animateWithDuration:0.3 animations:^{
                     recognizerView.frame = CGRectMake(btnX, btnY, buttonWidth, buttonHeight);
                 }];
