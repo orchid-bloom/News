@@ -12,7 +12,7 @@
 
 @property(nonatomic,strong)UIScrollView    *titleScrollView;       //标题ScrollView
 @property(nonatomic,strong)UIScrollView    *contentViewScrollView; //控制器ScrollView
-@property(nonatomic,strong)NSArray         *titleArray;                 //标题Array
+@property(nonatomic,strong)NSArray         *titleArray;            //标题Array
 @property(nonatomic,strong)NSMutableArray  *buttonArray;           //buttonArray
 @property(nonatomic,strong)UIButton        *selectButton;          //选择button
 @property(nonatomic,strong)UIImageView     *backgroundImageView;
